@@ -105,6 +105,8 @@ I aim to connect **engineering precision** with **player intuition**, showing th
 ## 🗂️ Folder Overview
 
 Assets/
+
+Assets/
 ├─ Scripts/
 │  ├─ CoreData.cs
 │  ├─ SaveLoadManager.cs
