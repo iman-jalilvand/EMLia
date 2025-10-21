@@ -105,43 +105,43 @@ I aim to connect **engineering precision** with **player intuition**, showing th
 ## 🗂️ Folder Overview
 
 Assets/
-┣ Scripts/
-┃ ┣ CoreData.cs
-┃ ┣ SaveLoadManager.cs
-┃ ┣ InventoryModel.cs
-┃ ┣ UIController.cs
-┃ ┣ GameController.cs
-┃ ┣ PickupInteractable.cs
-┃ ┣ FaceCamera.cs
-┃ ┗ ProximityHighlighter.cs
-┣ Scenes/
-┃ ┣ StartMenu.unity
-┃ ┗ EMLia.unity
-┣ Resources/
-┃ ┗ DeviceCatalog.json
-┣ AudioClips/
-┃ ┣ pickup.mp3
-┃ ┣ paper (use).mp3
-┃ ┗ drop.mp3
-┣ Data/
-┃ ┗ DeviceCatalog.JSON
-┣ Materials/
-┃ ┣ Door
-┃ ┣ Floor
-┃ ┣ Wall
-┃ ┣ Highlight_Mat
-┃ ┗ Pedestal
-┗ Art/
-┣ AppLogo
-┣ emerging_media_lab_logo
-┣ EML_logo_transparent
-┣ Guide
-┗ Tab_Guide
+|-- Scripts/
+|   |-- CoreData.cs
+|   |-- SaveLoadManager.cs
+|   |-- InventoryModel.cs
+|   |-- UIController.cs
+|   |-- GameController.cs
+|   |-- PickupInteractable.cs
+|   |-- FaceCamera.cs
+|   `-- ProximityHighlighter.cs
+|-- Scenes/
+|   |-- StartMenu.unity
+|   `-- EMLia.unity
+|-- Resources/
+|   `-- DeviceCatalog.json
+|-- AudioClips/
+|   |-- pickup.mp3
+|   |-- paper (use).mp3
+|   `-- drop.mp3
+|-- Data/
+|   `-- DeviceCatalog.JSON
+|-- Materials/
+|   |-- Door
+|   |-- Floor
+|   |-- Wall
+|   |-- Highlight_Mat
+|   `-- Pedestal
+`-- Art/
+    |-- AppLogo
+    |-- emerging_media_lab_logo
+    |-- EML_logo_transparent
+    |-- Guide
+    `-- Tab_Guide
 
 ## 🏁 Summary
 
-> **EMLia** is a concise yet complete Unity 6000.0.60f1 project that demonstrates robust data persistence, clean architecture, responsive UI, and thoughtful user experience.  
+> **EMLia** is a concise yet complete Unity 6000.0.60f1 project that demonstrates robust data inventory management in EML (Emerging Media Lab) setting with clean architecture, responsive UI, and thoughtful user experience.  
 > Players can interact with devices, view procedural SOPs, and manage inventory states that persist beyond the session through a JSON-based save system.  
-> The design showcases **clarity**, **scalability**, and **individual creativity**—reflecting a structured yet human-centered approach to game and XR system development.  
+> The design showcases **clarity**, **scalability**, and **individual creativity**.
 >  
 > This project highlights professional Unity practices, modular C# scripting, and a design philosophy grounded in **interactive learning, clean logic, and immersive feedback**.
