@@ -1,4 +1,4 @@
-# 🧩 EMLia
+# EMLia
 
 **Engine:** Unity 6000.0.60f1  
 **Platform:** Windows  
@@ -7,7 +7,7 @@
 
 ---
 
-## 🎮 Overview
+## Overview
 
 **EMLia** is a compact, first-person Unity project demonstrating a robust and modular **inventory system** with user-accessible **JSON-based save/load functionality**.  
 Players can explore, **pick up**, **use**, and **drop** interactive devices—each with its own SOP (Standard Operating Procedure)—while progress is persistently stored outside the game folder.  
@@ -16,7 +16,7 @@ The project highlights **clarity, modularity, and real-world persistence**, buil
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 1. **Open in Unity 6000.0.60f1 or newer**
    - Clone or download this repository.
@@ -94,7 +94,7 @@ I aim to connect **engineering precision** with **player intuition**, showing th
 
 ---
 
-## 🧠 Reflection
+## Reflection
 
 **EML Inventory XR** demonstrates:
 - **Clarity:** Each script serves a single, well-defined role.  
