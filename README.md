@@ -7,6 +7,13 @@
 
 ---
 
+## ⬇️ Download (Windows)
+Grab the latest build from the Releases page:
+
+- **[Download EMLia for Windows](../../releases/latest)**
+
+---
+
 ## Overview
 
 **EMLia** is a compact, first-person Unity project demonstrating a robust and modular **inventory system** with user-accessible **JSON-based save/load functionality**.  
@@ -40,7 +47,7 @@ Players can explore, **pick up**, **use**, and **drop** interactive devices, eac
 4. **Saving & Loading**
 
    All inventory saves are written as `.json` files to a user-accessible directory:
-   Documents/EMLInventory/
+   **Documents/EMLInventory/**
    The three most recent saves are automatically tracked and listed by the names you give them.
 
 ---
