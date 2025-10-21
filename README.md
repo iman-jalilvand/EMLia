@@ -3,7 +3,7 @@
 **Engine:** Unity 6000.0.60f1  
 **Platform:** Windows  
 **Language:** C#  
-**Repository:** Public GitHub repository
+**Repository:** Public GitHub repository  
 **AudioClips Source:** https://pixabay.com/sound-effects/search/paper/
 
 ---
