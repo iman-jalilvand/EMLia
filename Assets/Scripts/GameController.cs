@@ -91,6 +91,8 @@ public class GameController : MonoBehaviour
 
 void HandleInteract() 
 {
+    if (ui != null && ui.BlocksGameplayInput) return; // prevent actions when UI blocks input
+
     if (!Input.GetKeyDown(interactKey)) return;
 
     Ray ray = new Ray(playerCamera.transform.position, playerCamera.transform.forward);
@@ -114,6 +116,8 @@ void HandleInteract()
 
 void HandleUseDrop()
 {
+    if (ui != null && ui.BlocksGameplayInput) return; // prevent actions when UI blocks input
+    
     // Use with F: show SOP for held device (4s handled by UI)
     if (Input.GetKeyDown(useKey))
     {
@@ -160,6 +164,8 @@ void HandleUseDrop()
 
     void HandleInventoryToggle() 
     {
+        if (ui != null && ui.BlocksGameplayInput) return; // prevent actions when UI blocks input
+        
         if (Input.GetKeyDown(inventoryKey)) {
             ui.ToggleInventoryPanel();
         }

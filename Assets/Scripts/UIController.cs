@@ -5,6 +5,8 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
 using System.IO;
+using UnityEngine.EventSystems;
+
 
 public class UIController : MonoBehaviour
 {
@@ -58,6 +60,19 @@ public class UIController : MonoBehaviour
     public string lastMarkHex = "D7F6DF";     // optional green background
     public bool useGreenMarkOnLast = true;    // if you want the soft green fill
 
+    public bool IsSaveModalOpen => saveModalOpen;
+
+    public bool IsAnyInputFieldFocused()
+    {
+        var go = EventSystem.current?.currentSelectedGameObject;
+        if (go == null) return false;
+        return go.GetComponent<TMP_InputField>() != null
+            || go.GetComponent<UnityEngine.UI.InputField>() != null;
+    }
+
+    public bool BlocksGameplayInput => IsSaveModalOpen || IsAnyInputFieldFocused();
+
+
     void UnlockCursorForUI()
     {
         _prevLockMode = Cursor.lockState;
@@ -109,6 +124,8 @@ public class UIController : MonoBehaviour
 
     void OnAdded(DeviceInfo d)
     {
+        HideSOP(); // close any previous SOP immediately
+        
         if (d == null)
         {
             // Just re-render without toast or highlight
@@ -210,6 +227,8 @@ public class UIController : MonoBehaviour
     // ----- save modal -----
     void ShowSaveModal()
     {
+        HideSOP();  // close SOP so it doesn't overlay the modal
+
         if (saveModalPanel == null || saveButton == null || cancelButton == null || inventoryNameField == null)
         {
             Debug.LogWarning("Save modal references not assigned.");
@@ -344,8 +363,10 @@ public class UIController : MonoBehaviour
 
     public void HideSOP()
     {
+        CancelInvoke(nameof(HideSOP));   // stop the pending auto-hide if any
         if (sopPanel) sopPanel.SetActive(false);
     }
+
 
     public void PlayPickSfx() { if (sfxSource && pickClip) sfxSource.PlayOneShot(pickClip); }
     public void PlayDropSfx() { if (sfxSource && dropClip) sfxSource.PlayOneShot(dropClip); }

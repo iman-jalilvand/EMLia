@@ -2825,7 +2825,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd781722f096740818fb6e8dce826092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainSceneName: SampleScene
+  mainSceneName: EMLia
 --- !u!4 &1615731032
 Transform:
   m_ObjectHideFlags: 0
