@@ -10,9 +10,7 @@
 ## Overview
 
 **EMLia** is a compact, first-person Unity project demonstrating a robust and modular **inventory system** with user-accessible **JSON-based save/load functionality**.  
-Players can explore, **pick up**, **use**, and **drop** interactive devices—each with its own SOP (Standard Operating Procedure)—while progress is persistently stored outside the game folder.  
-
-The project highlights **clarity, modularity, and real-world persistence**, built with professional Unity architecture and human-centered system design.
+Players can explore, **pick up**, **use**, and **drop** interactive devices, each with its own SOP (Standard Operating Procedure), while progress is persistently stored outside the game folder.  
 
 ---
 
@@ -33,7 +31,7 @@ The project highlights **clarity, modularity, and real-world persistence**, buil
    | Move | **W A S D** | Standard FPS movement |
    | Look | Mouse | Rotate camera |
    | Pick Up / Interact | **E** | Pick up the device in front of you |
-   | Use Device | **F** | Show the device’s SOP for 6 seconds |
+   | Use Device | **F** | Show the device’s SOP for 4 seconds |
    | Drop Device | **Q** | Return the held device to its pedestal |
    | Toggle Inventory | **Tab** | Show or hide current inventory list |
    | Save/Load Menu | **Esc** | Manual save/load & exit options |
@@ -54,7 +52,7 @@ The project highlights **clarity, modularity, and real-world persistence**, buil
 **Core Features**
 - Pick up, use, and drop items with persistent state.  
 - JSON save/load outside the project folder.  
-- Visual inventory list with collected/uncollected color coding.  
+- Visual inventory list with collected/uncollected color coding and highlight.  
 - Auto-save modal when all items are collected (or manual via Esc).  
 - Load panel showing up to three most recent saves.
 
@@ -71,12 +69,12 @@ The project highlights **clarity, modularity, and real-world persistence**, buil
 ### 2️⃣ Additional System — SOP Interaction & Audio Feedback
 
 Adds interactivity and polish:
-- **F** → displays an SOP panel (device name + procedure) for 6 seconds.  
+- **F** → displays an SOP panel (device name + procedure) for 4 seconds.  
 - **Q** → drops the device, respawning it at its original location and greying it out again in the inventory.  
 - Integrated **audio feedback**:
-- **E** (pick up) → confirmation chime  
+- **E** (pick up) → confirmation chime + pick up sound  
 - **F** (use) → activation sound  
-- **Q** (drop) → return cue  
+- **Q** (drop) → return cue + drop sound  
 
 **Inspiration & Intent**  
 This system extends basic interaction with **procedural feedback**, reflecting my experience designing **XR training** applications where user actions trigger contextual instruction and sensory reinforcement.
@@ -96,11 +94,11 @@ I aim to connect **engineering precision** with **player intuition**, showing th
 
 ## Reflection
 
-**EML Inventory XR** demonstrates:
+**EMLia** demonstrates:
 - **Clarity:** Each script serves a single, well-defined role.  
 - **Scalability:** New devices or SOPs can be added by extending JSON data.  
 - **Creativity through structure:** Interaction and feedback replace flashy visuals with meaningful design.  
-- **Individuality:** It represents how I build experiences—grounded in logic, enhanced by creativity, and centered on the user.
+- **Individuality:** It represents how I build experiences—grounded in logic, enhanced by creativity, and centered on the user, with customized UI menus.
 
 ---
 
@@ -142,7 +140,7 @@ Assets/
 
 ## 🏁 Summary
 
-> **EML Inventory XR** is a concise yet complete Unity 6000.0.60f1 project that demonstrates robust data persistence, clean architecture, responsive UI, and thoughtful user experience.  
+> **EMLia** is a concise yet complete Unity 6000.0.60f1 project that demonstrates robust data persistence, clean architecture, responsive UI, and thoughtful user experience.  
 > Players can interact with devices, view procedural SOPs, and manage inventory states that persist beyond the session through a JSON-based save system.  
 > The design showcases **clarity**, **scalability**, and **individual creativity**—reflecting a structured yet human-centered approach to game and XR system development.  
 >  
