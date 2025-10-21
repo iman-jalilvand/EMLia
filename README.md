@@ -7,6 +7,13 @@
 
 ---
 
+## ⬇️ Download (Windows)
+Grab the latest build from the Releases page:
+
+- **[Download EML Inventory XR for Windows](../../releases/latest)**
+
+---
+
 ## Overview
 
 **EMLia** is a compact, first-person Unity project demonstrating a robust and modular **inventory system** with user-accessible **JSON-based save/load functionality**.  
