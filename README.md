@@ -52,6 +52,12 @@ Players can explore, **pick up**, **use**, and **drop** interactive devices, eac
 
 ---
 
+<video src="EMLia_Demo.mp4" width="720" controls muted loop>
+  Your browser does not support the video tag.
+</video>
+
+---
+
 ## 📦 System Design Breakdown
 
 ### 1️⃣ Working Inventory System
