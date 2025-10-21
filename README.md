@@ -47,7 +47,7 @@ Players can explore, **pick up**, **use**, and **drop** interactive devices, eac
 4. **Saving & Loading**
 
    All inventory saves are written as `.json` files to a user-accessible directory:
-   Documents/EMLInventory/
+   **Documents/EMLInventory/**
    The three most recent saves are automatically tracked and listed by the names you give them.
 
 ---
