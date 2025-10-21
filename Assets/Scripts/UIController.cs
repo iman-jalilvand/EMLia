@@ -135,7 +135,7 @@ public class UIController : MonoBehaviour
         RenderList();
     }
 
-    void RenderList()
+    public void RenderList()
     {
         var sb = new StringBuilder();
 

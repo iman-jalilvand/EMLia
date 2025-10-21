@@ -7,6 +7,15 @@ public class PickupInteractable : MonoBehaviour
 
     private bool collected = false;
 
+    private Vector3 _startPos;
+    private Quaternion _startRot;
+
+    void Awake()
+    {
+        _startPos = transform.position;
+        _startRot = transform.rotation;
+    }
+
     public void TryPickup(InventoryModel inv, UIController ui)
     {
         if (collected) return;
@@ -24,5 +33,15 @@ public class PickupInteractable : MonoBehaviour
         // hide visuals + collider
         foreach (var r in GetComponentsInChildren<Renderer>()) r.enabled = false;
         foreach (var c in GetComponentsInChildren<Collider>()) c.enabled = false;
+    }
+
+    public void Respawn()
+    {
+        transform.SetPositionAndRotation(_startPos, _startRot);
+
+        foreach (var r in GetComponentsInChildren<Renderer>()) r.enabled = true;
+        foreach (var c in GetComponentsInChildren<Collider>()) c.enabled = true;
+
+        collected = false;
     }
 }

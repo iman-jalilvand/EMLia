@@ -114,7 +114,7 @@ void HandleInteract()
 
 void HandleUseDrop()
 {
-    // Use with F: show SOP for held device (6s handled by UI)
+    // Use with F: show SOP for held device (4s handled by UI)
     if (Input.GetKeyDown(useKey))
     {
         if (heldDevice != null)
@@ -133,17 +133,29 @@ void HandleUseDrop()
     {
         if (heldDevice != null)
         {
-            ui.ShowToast($"Dropped: {heldDevice.displayName}");
+            // 1) Un-collect so it turns grey again in UI
+            bool removed = inventory.Remove(heldDevice);
+
+            // 2) Respawn the world object at its original pedestal
+            if (heldPickupSource != null)
+                heldPickupSource.Respawn();
+
+            // 3) UI feedback + refresh
+            ui.ShowToast($"Returned: {heldDevice.displayName}");
             ui.PlayDropSfx();
+            ui.HideSOP();
+            ui.RenderList(); // if you made RenderList() public
+
+            // 4) Clear held state
             heldDevice = null;
             heldPickupSource = null;
-            ui.HideSOP();
         }
         else
         {
             ui.ShowToast("Nothing to drop.");
         }
     }
+
 }
 
     void HandleInventoryToggle() 

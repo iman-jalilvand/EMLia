@@ -18,6 +18,12 @@ public class InventoryModel : MonoBehaviour
 
     public bool Contains(string id) => collectedIds.Contains(id);
 
+    public bool Remove(DeviceInfo info)
+    {
+        if (info == null || string.IsNullOrEmpty(info.id)) return false;
+        return collectedIds.Remove(info.id);
+    }
+
     public void Add(DeviceInfo info)
     {
         if (info == null || Contains(info.id)) return;
