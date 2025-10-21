@@ -1,0 +1,40 @@
+{
+  "devices": [
+    {
+      "id": "quest3",
+      "displayName": "Meta Quest 3",
+      "category": "XR Headset",
+      "sop": "Standalone MR and VR for quick demos. Good for hand tracking and rapid prototyping."
+    },
+    {
+      "id": "hl2",
+      "displayName": "HoloLens 2",
+      "category": "AR Headset",
+      "sop": "Heads-up AR with hand and eye tracking. Use for spatial guidance and on-site training."
+    },
+    {
+      "id": "vivepro",
+      "displayName": "HTC Vive Pro",
+      "category": "VR Headset",
+      "sop": "PC-tethered VR for high fidelity. Good for room-scale tracking and controlled lab studies."
+    },
+    {
+      "id": "ml2",
+      "displayName": "Magic Leap 2",
+      "category": "AR Headset",
+      "sop": "AR with high-quality optics and dimming. Use for mixed-light environments and precise overlays."
+    },
+    {
+      "id": "insta360",
+      "displayName": "Insta360 One X",
+      "category": "360 Camera",
+      "sop": "Capture immersive photos and video. Use for environment scanning and classroom assets."
+    },
+    {
+      "id": "ipadlidar",
+      "displayName": "iPad Pro (LiDAR)",
+      "category": "Tablet + LiDAR",
+      "sop": "Mobile spatial capture and annotation. Good for quick scans and site documentation."
+    }
+  ]
+}
