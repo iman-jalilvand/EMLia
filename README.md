@@ -10,7 +10,7 @@
 ## ⬇️ Download (Windows)
 Grab the latest build from the Releases page:
 
-- **[Download EML Inventory XR for Windows](../../releases/latest)**
+- **[Download EMLia for Windows](../../releases/latest)**
 
 ---
 
