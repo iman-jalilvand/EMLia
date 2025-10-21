@@ -52,7 +52,7 @@ Players can explore, **pick up**, **use**, and **drop** interactive devices, eac
 
 ---
 
-[<video src="EMLia_Demo.mp4" width="720" controls muted loop>](https://github.com/iman-jalilvand/EMLia/raw/main/EMLia_Demo.mp4)
+(https://github.com/iman-jalilvand/EMLia/raw/main/EMLia_Demo.mp4)
 
 ---
 
