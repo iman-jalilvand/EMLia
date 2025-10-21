@@ -105,38 +105,38 @@ I aim to connect **engineering precision** with **player intuition**, showing th
 ## 🗂️ Folder Overview
 
 Assets/
-|-- Scripts/
-|   |-- CoreData.cs
-|   |-- SaveLoadManager.cs
-|   |-- InventoryModel.cs
-|   |-- UIController.cs
-|   |-- GameController.cs
-|   |-- PickupInteractable.cs
-|   |-- FaceCamera.cs
-|   `-- ProximityHighlighter.cs
-|-- Scenes/
-|   |-- StartMenu.unity
-|   `-- EMLia.unity
-|-- Resources/
-|   `-- DeviceCatalog.json
-|-- AudioClips/
-|   |-- pickup.mp3
-|   |-- paper (use).mp3
-|   `-- drop.mp3
-|-- Data/
-|   `-- DeviceCatalog.JSON
-|-- Materials/
-|   |-- Door
-|   |-- Floor
-|   |-- Wall
-|   |-- Highlight_Mat
-|   `-- Pedestal
-`-- Art/
-    |-- AppLogo
-    |-- emerging_media_lab_logo
-    |-- EML_logo_transparent
-    |-- Guide
-    `-- Tab_Guide
+├─ Scripts/
+│  ├─ CoreData.cs
+│  ├─ SaveLoadManager.cs
+│  ├─ InventoryModel.cs
+│  ├─ UIController.cs
+│  ├─ GameController.cs
+│  ├─ PickupInteractable.cs
+│  ├─ FaceCamera.cs
+│  └─ ProximityHighlighter.cs
+├─ Scenes/
+│  ├─ StartMenu.unity
+│  └─ EMLia.unity
+├─ Resources/
+│  └─ DeviceCatalog.json
+├─ AudioClips/
+│  ├─ pickup.mp3
+│  ├─ paper (use).mp3
+│  └─ drop.mp3
+├─ Data/
+│  └─ DeviceCatalog.JSON
+├─ Materials/
+│  ├─ Door
+│  ├─ Floor
+│  ├─ Wall
+│  ├─ Highlight_Mat
+│  └─ Pedestal
+└─ Art/
+   ├─ AppLogo
+   ├─ emerging_media_lab_logo
+   ├─ EML_logo_transparent
+   ├─ Guide
+   └─ Tab_Guide
 
 ## 🏁 Summary
 
